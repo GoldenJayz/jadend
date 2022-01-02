@@ -1,0 +1,79 @@
+@font-face {
+  font-family: chopsic;
+  src: url("chopsic.ttf");
+}
+
+@font-face {
+  font-family: above;
+  src: url("ABOVE.ttf");
+}
+
+html {
+  margin: 0;
+}
+
+.navbar-brand {
+  font-family: "Roboto", sans-serif;
+}
+
+#firstback {
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  height: 600px;
+  width: 100% !important;
+  float: left;
+}
+
+nav {
+  z-index: 1;
+}
+
+/* optimize for mobile */
+
+#maintxt {
+  position: relative;
+  text-align: center;
+  top: 200px;
+}
+
+.py-5 {
+  padding-top: 40rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #firstback {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 400px;
+    width: 100% !important;
+    float: left;
+  }
+
+  .py-5 {
+    padding-top: 20rem !important;
+  }
+
+  #textoverimage {
+    height: 400px !important;
+  }
+
+  #maintxt {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+  }
+}
+
+#textoverimage {
+  background-image: url("https://cdn.glitch.com/caba75b7-e257-44b4-9ebf-9ac188b990c0%2Ftemple.jpg?v=1625232638110") !important;
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}

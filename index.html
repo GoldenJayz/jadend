@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Make the top part of the cards clickable -->
+  <head>
+    <title>Jaden's website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Jaden's Website" />
+    <meta
+      property="og:description"
+      content="This is Jaden's/Gold#1337's Website"
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.discordapp.com/attachments/805911515022360587/847437849766526986/image0.jpg"
+    />
+    <meta property="og:url" content="jadend.xyz" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .bd-placeholder-img {
+        font-size: 2rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .py-5 {
+        padding-top: 1rem !important;
+      }
+      @media only screen and (max-width: 600px) {
+        #firstback {
+          left: 0;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          height: 400px;
+          width: 100% !important;
+          float: left;
+        }
+        #textoverimage {
+          height: 400px !important;
+        }
+        #maintxt {
+          position: relative;
+          text-align: center;
+          z-index: 2;
+        }
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: #1868c9; box-shadow: 1px 1px 15px black"
+    >
+      <div class="container-fluid">
+        <p class="navbar-brand mt-0">jadend.xyz</p>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav mr-auto mb-2 mb-lg-0 nav"
+            id="bs-example-navbar-collapse-1"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <article>
+      <div class="container-fluid" id="textoverimage">
+        <h1 class="text-center" style="color:white;" id="maintxt">Jaden</h1>
+      </div>
+    </article>
+    <main>
+      <div class="album py-5 bg-light">
+        <h1 class="text-center" style="padding: 20px">Projects</h1>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow">
+                <a href="https://github.com/GoldenJayz/puck">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#969696" />
+                  <text
+                    x="50%"
+                    y="50%"
+                    fill="#eceeef"
+                    dy=".3em"
+                    style="font-size"
+                  >
+                    Puck
+                  </text>
+                </svg>
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    A multi-purpose open-source Discord bot made using Python.
+                    Puck is a Discord bot based off Puck from Re: Zero. Puck has
+                    many useful capabilities as a Discord bot. Puck can tell the
+                    weather for anywhere in the United States. Puck also has
+                    music capabilities.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow">
+                <a href="https://github.com/GoldenJayz/jankpong">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#000" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                    Jank Pong
+                  </text>
+                </svg>
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    The world's worst version of pong. Made using Unity and C#
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow">
+                <a href="https://github.com/GoldenJayz/webimageclassifier">
+                <svg
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="225"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: Thumbnail"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                >
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#ffd343" />
+                  <text x="50%" y="50%" fill="#4b8bbe" dy=".3em">
+                    WebImage Classifier
+                  </text>
+                </svg>
+                </a>
+                <div class="card-body">
+                  <p class="card-text">
+                    A work in progress. Utilizes Python's AI capabilities to the
+                    determine the percentage of how someone looks compare to
+                    another person.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    </div>
+                    <small class="text-muted">Work in Progress</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="album py-5 bg-dark">
+        <h1 class="text-center" style="color:#fff">About me</h1>
+        <div class="container-fluid mt-5 ml-5">
+          <div class="jumbotron text-white">
+            <p class="text-center" style="font-size:1.2rem;">
+              My name is Jaden and I live in Massachusetts.
+              I am currently 15 years old and I started programming
+              when I was 12. My first programming language was Python.
+              The only reason why I ended up using Python was cause I
+              had it installed on my computer before. I originally did
+              not even code for the most part. I used an application made
+              by someone else to create discord bots. One day my friend 
+              wanted to do an hour of coding and I did not even know how 
+              to really code that much. So I ended up taking on the challenge
+              of doing an hour of code. I started looking at the code made by
+              the application in order to grasp a better understanding of what
+              it was doing. I started wanting to do more and more so I started
+              looking up Discord bot tutorials on YouTube. I did not end up 
+              learning Python through lessons and such. It just naturally came
+              to me. I started doing little Discord bots that my online friends
+              and real life friends would use. Then quarantine came in 2020 and
+              I wanted to do more than just Discord bots. I made some simple 
+              programs and software. I then decided that I want to expand my 
+              skills and apply to a Technical Highschool. I got accepted and 
+              while I was exploring the different choices for shops I came across
+              Computer Programming and Web Development. It piqued my interest. I 
+              decided to try out the shop for a week and I ended up learning 
+              basic HTML on the first day. This inspired me heavily and I spent the
+              day when I got home learning more and more about HTML and CSS. At the 
+              same time my friend and I decided to create a Discord bot together 
+              and that Discord bot was Puck. I did majority of the bot programming
+              and he did majority of the website side of things. At the same time 
+              I started picking up other languages like JavaScript and C++.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
