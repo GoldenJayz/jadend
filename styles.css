@@ -79,3 +79,8 @@ nav {
     margin-lefT: auto;
   }
 }
+
+.card {
+
+  flex-direction: row !important;
+}
