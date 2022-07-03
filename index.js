@@ -6,7 +6,7 @@ function inView(element)
     var top = rect.top;
     var bottom = rect.bottom;
 
-    if (top >= 0 && bottom <= window.innerWidth) visible = true;
+    if (top <= 0 && bottom <= window.innerWidth) visible = true;
 
     return visible;
 }
