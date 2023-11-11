@@ -1,3 +1,4 @@
+var rellax = new Rellax('.rellax');
 
 function inView(element)
 {
