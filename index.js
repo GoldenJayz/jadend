@@ -75,11 +75,14 @@ document.addEventListener("scroll", () =>
 
 // Typing function
 
+let keyWords = ['Programmer', 'Problem-Solver', 'Guitarist', 'Nerd']
+const TIME = 75;
+
 async function typeWord(keyWord, index) {
     try {
         if (keyWord.length != index) {
             let string = document.getElementById('typingText');
-            await sleep(50);
+            await sleep(TIME);
             string.innerText += keyWord[index];
     
             await typeWord(keyWord, index + 1);
@@ -95,7 +98,7 @@ async function typeWord(keyWord, index) {
 async function deleteWord(keyWord, index) {
     if (index > 0) {
         let string = document.getElementById('typingText');
-        await sleep(50);
+        await sleep(TIME);
         string.innerText = string.innerText.slice(0, -1);
 
         await deleteWord(keyWord, index - 1);
@@ -106,15 +109,18 @@ async function deleteWord(keyWord, index) {
 
 
 async function selectKeyword(keyWord) {
-    if (keyWords.indexOf(keyWord) <= 3) {
+    if (keyWord == undefined) {
+        selectKeyword(keyWords[0]);
+    }
+    else if (keyWords.indexOf(keyWord) < 4) {
         await typeWord(keyWord, 0);
+        await sleep(1500);
         await deleteWord(keyWord, keyWord.length);
         await selectKeyword(keyWords[keyWords.indexOf(keyWord) + 1]);
     }
 }
 
 
-let keyWords = ['Programmer', 'Problem-Solver', 'Guitarist', 'Nerd']
 selectKeyword(keyWords[0]);
     
   
