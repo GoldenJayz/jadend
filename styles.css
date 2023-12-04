@@ -107,6 +107,22 @@ nav {
   padding-right: 0 !important;
 }
 
+#about {
+  height: 100vh;
+}
+
+#about > .container-fluid > .card {
+  float: right;
+  height: 450px;
+  width: 40%;
+  margin: 10px;
+  background-color: #629cc1;
+}
+
+#about > .container-fluid > .card > .card-body > ul {
+  text-align: left;
+}
+
 #aboutMe {
   background: #1f3655;
   font-size: 1.5rem;

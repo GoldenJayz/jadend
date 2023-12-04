@@ -122,6 +122,3 @@ async function selectKeyword(keyWord) {
 
 
 selectKeyword(keyWords[0]);
-    
-  
- 
