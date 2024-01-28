@@ -27,52 +27,6 @@ document.addEventListener("scroll", () =>
 });
 
 
-
-
-
-// let keyWords = ['Programmer', 'Problem-Solver', 'Guitarist', 'Nerd']
-// let string = document.getElementById('typingText');
-
-
-// for (let i = 0; i < keyWords.length; i++) {
-//     let keyWord = keyWords[i];
-//     setTimeout(typeLetter(keyWord, 0));
-// }
-
-// function typeLetter(keyWord, index) {
-//     if (keyWord.length == index + 1)
-//         return;
-
-//     else {
-//         setTimeout(() => {
-//             string.innerText += keyWord[index];
-//         }, index*50)
-//         typeLetter(keyWord, index+1)
-//     }
-
-// }
-
-
-// async function timeCarosoul() {
-//     let keyWords = ['Programmer', 'Problem-Solver', 'Guitarist', 'Nerd']
-//     let string = document.getElementById('typingText');
-//     var letter = 'f';
-    
-//     for (let i = 0; i < keyWords.length; i++) {
-//         let keyWord = keyWords[i];
-    
-//         for (let x = 0; x < keyWord.length; x++) {
-//             letter = keyWord[x]
-//             await sleep(50);
-//             string.innerText += letter;
-//         }
-//     }
-// }
-
-// timeCarosoul()
-
-// Create a delete text function
-
 // Typing function
 
 let keyWords = ['Programmer', 'Problem-Solver', 'Guitarist', 'Nerd']

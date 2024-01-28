@@ -117,6 +117,22 @@ nav {
   justify-content: center;
 }
 
+/* 1012 */
+
+@media only screen and (max-width: 1012px) {
+  #aboutContentContainer {
+    flex-direction: column;
+  }
+
+  #about {
+    height: auto !important;
+  }
+
+  #aboutParagraph {
+    width: auto !important;
+  }
+}
+
 img#me {
   height: 700px;
 }
@@ -144,7 +160,7 @@ img#me {
 
 #aboutParagraph {
   width: 500px;
-  font-size: 27px;
+  font-size: 1.5rem;
 }
 
 @keyframes bobbing {
