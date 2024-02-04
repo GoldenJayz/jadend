@@ -163,6 +163,16 @@ img#me {
   font-size: 1.5rem;
 }
 
+#icons {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.icon {
+  height: 25px;
+}
+
 @keyframes bobbing {
   0% {
     transform: translateY(0px);
