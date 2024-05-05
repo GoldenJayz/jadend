@@ -76,3 +76,24 @@ async function selectKeyword(keyWord) {
 
 
 selectKeyword(keyWords[0]);
+
+// Make a slideshow you tard
+
+let imageArray = ['images/me.JPG', 'images/me1.jpg', 'images/me2.jpg'];
+
+// When you click button make one image disappear and then make another appear QWOW
+
+let button = document.getElementById('forwardButton');
+let image = document.getElementById('me');
+let imageIndex = 1;
+
+button.onclick = () => {
+
+    if (imageIndex > 2) {
+        imageIndex = 0;
+    }
+    
+    image.src = imageArray[imageIndex];
+    imageIndex += 1;
+
+};
