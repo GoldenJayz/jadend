@@ -81,19 +81,30 @@ selectKeyword(keyWords[0]);
 
 let imageArray = ['images/me.JPG', 'images/me1.jpg', 'images/me2.jpg'];
 
-// When you click button make one image disappear and then make another appear QWOW
+// When you click forwardButton make one image disappear and then make another appear QWOW
 
-let button = document.getElementById('forwardButton');
+let forwardButton = document.getElementById('forwardButton');
+let backButton = document.getElementById('backButton');
 let image = document.getElementById('me');
-let imageIndex = 1;
+let imageIndex = 0;
 
-button.onclick = () => {
+forwardButton.onclick = () => {
+    imageIndex += 1;
+
 
     if (imageIndex > 2) {
         imageIndex = 0;
     }
     
     image.src = imageArray[imageIndex];
-    imageIndex += 1;
+};
 
+backButton.onclick = () => {
+    imageIndex -= 1;
+
+    if (imageIndex < 0) {
+        imageIndex = 2;
+    }
+    
+    image.src = imageArray[imageIndex];
 };

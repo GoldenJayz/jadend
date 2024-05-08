@@ -146,6 +146,8 @@ nav {
 }
 
 img#me {
+  object-fit: cover;
+  width: 467px;
   height: 700px;
 }
 
