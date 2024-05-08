@@ -209,3 +209,7 @@ img#me {
   position: absolute;
   animation: bobbing 2s infinite;
 }
+
+button {
+  border: none;
+}
