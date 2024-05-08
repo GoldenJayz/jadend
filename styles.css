@@ -120,8 +120,10 @@ nav {
 /* 1012 */
 
 @media only screen and (max-width: 1012px) {
-  #aboutContentContainer {
-    flex-direction: column;
+
+
+  #forwardButton, #backButton {
+    display: none !important;
   }
 
   #about {
@@ -142,6 +144,14 @@ nav {
 
   #aboutWords {
     margin-left: 5px !important;
+  }
+
+  #aboutContentContainer {
+    flex-direction: column;
+  }
+
+  #aboutJadenGradient > h3 {
+    margin-top: 25px;
   }
 }
 
