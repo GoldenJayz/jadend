@@ -1,3 +1,5 @@
+var rellax = new Rellax('.rellax');
+const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 function inView(element)
 {
@@ -23,3 +25,86 @@ document.addEventListener("scroll", () =>
 
     else nav.classList.add("navbar-expand-sm");
 });
+
+
+// Typing function
+
+let keyWords = ['Programmer', 'Problem-Solver', 'Guitarist', 'Nerd']
+const TIME = 75;
+
+async function typeWord(keyWord, index) {
+    try {
+        if (keyWord.length != index) {
+            let string = document.getElementById('typingText');
+            await sleep(TIME);
+            string.innerText += keyWord[index];
+    
+            await typeWord(keyWord, index + 1);
+        } else {
+            return;
+        }
+    } catch (err) {
+        return;  
+    }
+}
+
+
+async function deleteWord(keyWord, index) {
+    if (index > 0) {
+        let string = document.getElementById('typingText');
+        await sleep(TIME);
+        string.innerText = string.innerText.slice(0, -1);
+
+        await deleteWord(keyWord, index - 1);
+    } else {
+        return;
+    }
+}
+
+
+async function selectKeyword(keyWord) {
+    if (keyWord == undefined) {
+        selectKeyword(keyWords[0]);
+    }
+    else if (keyWords.indexOf(keyWord) < 4) {
+        await typeWord(keyWord, 0);
+        await sleep(1500);
+        await deleteWord(keyWord, keyWord.length);
+        await selectKeyword(keyWords[keyWords.indexOf(keyWord) + 1]);
+    }
+}
+
+
+selectKeyword(keyWords[0]);
+
+// Make a slideshow you tard
+
+let imageArray = ['images/me.JPG', 'images/me1.jpg', 'images/me2.jpg'];
+
+// When you click forwardButton make one image disappear and then make another appear QWOW
+
+let forwardButton = document.getElementById('forwardButton');
+let backButton = document.getElementById('backButton');
+let image = document.getElementById('me');
+let imageIndex = 0;
+
+forwardButton.onclick = () => {
+    imageIndex += 1;
+
+
+    if (imageIndex > 2) {
+        imageIndex = 0;
+    }
+    
+    image.src = imageArray[imageIndex];
+};
+
+backButton.onclick = () => {
+    imageIndex -= 1;
+
+    if (imageIndex < 0) {
+        imageIndex = 2;
+    }
+    
+    image.src = imageArray[imageIndex];
+};
