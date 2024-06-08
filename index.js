@@ -79,7 +79,7 @@ selectKeyword(keyWords[0]);
 
 // Make a slideshow you tard
 
-let imageArray = ['images/me.JPG', 'images/me1.jpg', 'images/me2.jpg'];
+let imageArray = ['images/DSC09221.jpg', 'images/DSC09218.jpg', 'images/DSC03199.jpg'];
 
 // When you click forwardButton make one image disappear and then make another appear QWOW
 
