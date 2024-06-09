@@ -230,3 +230,27 @@ button {
   display: none;
  } 
 }
+
+#projects {
+  color: #212529;
+  background-color: #d7d7d7c8;
+  padding-top: 15px;
+  padding-bottom: 100px;
+}
+
+.card {
+  border-radius: 10px !important;
+}
+
+.card-img-top {
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+
+.card-title {
+  color: #212529;
+}
+
+.card-text {
+  color: #212529;
+}
