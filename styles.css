@@ -192,6 +192,7 @@ img#me {
 
 .icon {
   height: 25px;
+  margin-left: 10px;
 }
 
 @keyframes bobbing {
