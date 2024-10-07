@@ -29,7 +29,7 @@ document.addEventListener("scroll", () =>
 
 // Typing function
 
-let keyWords = ['Programmer', 'Problem-Solver', 'Guitarist', 'Nerd']
+let keyWords = ['Entrepreneur', 'Treasurer', 'Ambivert', 'Programmer']
 const TIME = 75;
 
 async function typeWord(keyWord, index) {

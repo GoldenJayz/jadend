@@ -358,6 +358,11 @@ button {
 
 
 @media only screen and (max-width: 728px) {
+
+  #aboutContentContainer {
+    flex-direction: column;
+  }
+
   img#me {
     width: 100% !important;
     height: auto !important;
@@ -365,10 +370,6 @@ button {
 
   #aboutWords {
     margin-left: 5px !important;
-  }
-
-  #aboutContentContainer {
-    flex-direction: row;
   }
 
   #aboutJadenGradient > h3 {
