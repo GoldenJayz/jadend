@@ -262,37 +262,97 @@ button {
 
 #littleMore {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+#imgContainer {
+  width: 40%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  align-self: center;
+  
 }
 
-#littleMore > h1 {
-  text-align: center;
+#imgContainer > img {
+  height: 800px;
+  border-radius: 10px;
 }
 
-#imageRightSide {
+#paragraphContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px;
+  width: 60%;
+}
+
+#paragraphContent > h1 {
+  font-size: 75px;
+}
+
+.paragraphAndImg {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 
-#imageRightSide > p {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-left: 10%;
-  margin-right: 10%;
+.paragraphAndImg:nth-of-type(2) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraphAndImg > p {
   font-size: 1.5rem;
-  width: 40%;
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-#imageRightSide > img {
+
+#paragraphContent > img {
+  width: 100%;
+  height: 100px !important;
   object-fit: cover;
-  width: 333px;
-  height: 500px;
+  object-position: 50% 100%; /* even if we dont declare this the image will still be centered */
+  border-radius: 10px;
+  height: auto;
 }
+
+
+/* Little more section */
+
+@media only screen and (max-width: 1300px) {
+  #littleMore {
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+  }
+
+  #imgContainer > img { 
+    width: 100vw;
+    height: auto;
+  }
+
+  .paragraphAndImg  {
+    flex-direction: column;
+  }
+
+  #paragraphContent, #imgContainer {
+    width: auto;
+  }
+
+  .paragraphAndImg:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+}
+
+
 
 /* 1.5 ratio */
 
