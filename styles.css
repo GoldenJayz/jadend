@@ -345,11 +345,19 @@ button {
 
   #paragraphContent, #imgContainer {
     width: auto;
+    padding: 0;
+  }
+
+  #paragraphContent > h1 {
+    font-size: 55px;
+    text-align: center;
   }
 
   .paragraphAndImg:nth-of-type(2) {
     flex-direction: column-reverse;
   }
+
+  
 }
 
 
